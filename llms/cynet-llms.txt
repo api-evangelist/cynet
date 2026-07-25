@@ -1,0 +1,45 @@
+# Cynet
+
+> Cynet is a unified, AI-powered cybersecurity platform for MSPs and lean IT/security teams that consolidates endpoint (EDR/EPP), network, email, cloud/SaaS, mobile, and identity protection into a single agent and console. It exposes a REST API (Cynet 360) for programmatic access to alerts, hosts, remediation, scans, and account operations, in an On-Prem V1 and a SaaS V3 track, authenticated with a tenant-scoped access token.
+
+## APIs
+
+- [Cynet 360 API (SaaS V3)](https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation): REST API for the Cynet 360 SaaS platform; alerts, hosts and host groups, remediation, scans, account/token. Base URL is tenant-specific (https://{tenant}.api.cynet.com).
+- [Cynet 360 API (On-Prem V1)](https://help.api.cynet.com/docs/cynet/iah0dsbmetd0e-welcome-to-cynet-api-reference): REST API for on-premises Cynet 360 deployments.
+
+## Authentication
+
+- [Authentication](https://help.api.cynet.com/docs/cynet/b6b6c2d4906e9-authentication): Access-key + secret-key credential exchange at POST /api/account/token returns a bearer access token valid for 60 minutes, presented as a header on every request. Requires an API user with the Cynet API User permission (or an "API - full access" role).
+
+## Docs
+
+- [API Reference (SaaS V3)](https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation)
+- [API Reference (On-Prem V1)](https://help.api.cynet.com/docs/cynet/iah0dsbmetd0e-welcome-to-cynet-api-reference)
+- [Help Center](https://help.cynet.com)
+- [What's New / Release Notes](https://www.cynet.com/whats-new/)
+- [Blog](https://www.cynet.com/blog/)
+- [Pricing / Packages](https://www.cynet.com/packages/)
+
+## Platform
+
+- [Cynet Platform](https://www.cynet.com/platform/): Unified XDR, EDR/EPP, NGAV, SOAR, and 24x7 CyOps MDR.
+- [Partner / Management Portal](https://portal.cynet.com)
+
+## Trust & Security
+
+- [Trust Center](https://www.cynet.com/cynet-trust-center/): SOC 2 Type II, ISO 27001, HIPAA, PCI DSS, GDPR, NIST CSF, NIST 800-171, DFARS 7012, CMMC, DORA, NIS2, TX-RAMP Level 2.
+- [Responsible Disclosure](https://www.cynet.com/cynet-responsible-disclosure-policy/): report to responsible-disclosure@cynet.com.
+- [Status](https://cynet.statuspage.io)
+- [Terms of Use](https://www.cynet.com/terms-of-use/)
+- [Privacy Policy](https://www.cynet.com/privacy-policy/)
+
+## Repo Artifacts
+
+- authentication/cynet-authentication.yml — authentication profile
+- conventions/cynet-conventions.yml — cross-cutting API conventions
+- conformance/cynet-conformance.yml — compliance & standards conformance
+- lifecycle/cynet-lifecycle.yml — versioning, status page, release notes
+- changelog/cynet-changelog.yml — recent product & API releases
+- security/cynet-domain-security.yml — TLS/HSTS/DNS posture
+- security/cynet-trust-center.yml — certifications
+- security/cynet-vulnerability-disclosure.yml — responsible disclosure

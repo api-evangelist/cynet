@@ -1,0 +1,43 @@
+generated: '2026-07-18'
+method: searched
+source: https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation
+docs:
+- https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation
+- https://help.api.cynet.com/docs/cynet/b6b6c2d4906e9-authentication
+authentication:
+  style: bearer-token
+  header: token access token
+  token_endpoint: /api/account/token
+  token_ttl_seconds: 3600
+  detail: authentication/cynet-authentication.yml
+base_url:
+  style: tenant-subdomain
+  pattern: https://{tenant}.api.cynet.com
+  api_prefix: /api
+versioning:
+  style: major-version-tracks
+  tracks:
+  - On-Prem V1
+  - SaaS V3
+  detail: lifecycle/cynet-lifecycle.yml
+idempotency:
+  supported: unknown
+  note: No idempotency-key mechanism is documented in the public API reference.
+pagination:
+  supported: unknown
+  note: Pagination conventions are not published in the public API reference.
+error_envelope:
+  format: unknown
+  note: A structured error catalog is not published; API-level errors follow the
+    platform's standard HTTP status responses.
+rate_limiting:
+  documented: false
+transport:
+  protocol: https
+  media_type: application/json
+notes: >-
+  Cross-cutting conventions derived from the Cynet API reference. The public docs
+  cover authentication and the account token flow in depth but do not publish
+  idempotency, pagination, or a formal error-envelope contract; those are marked
+  unknown rather than fabricated. No idempotency support is claimed, so no
+  Idempotency rating pointer is emitted.

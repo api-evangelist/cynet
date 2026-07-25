@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.cynet.com/whats-new/
+versioning:
+  scheme: major-version-tracks
+  tracks:
+  - id: v1-on-prem
+    label: On-Prem V1
+    docs: https://help.api.cynet.com/docs/cynet/iah0dsbmetd0e-welcome-to-cynet-api-reference
+  - id: v3-saas
+    label: SaaS V3
+    docs: https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation
+  current: V3 (SaaS)
+  note: >-
+    Cynet ships a versioned REST API alongside its platform. The API V3 strategy
+    (SaaS) is the current track; On-Prem is served by the V1 API. Platform product
+    releases follow a v4.x cadence (e.g. v4.31, Feb 2026).
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No formal API deprecation / Sunset-header policy is published.
+status_page: https://cynet.statuspage.io
+release_notes:
+- https://www.cynet.com/whats-new/
+- https://help.cynet.com
+sla:
+  url: null
+  note: SLA/uptime targets not published publicly; status is tracked on the Statuspage.
+deprecated_operations: []
+notes: >-
+  StatusPage confirmed live at https://cynet.statuspage.io ("Cynet Status"). No
+  public API deprecation policy was found, so no Deprecation pointer is emitted.

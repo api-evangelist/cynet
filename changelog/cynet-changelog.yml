@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.cynet.com/whats-new/
+scheme: platform-release-train
+current_version: v4.31
+docs:
+- https://www.cynet.com/whats-new/
+- https://help.cynet.com
+note: >-
+  Cynet publishes dated product release notes on a v4.x train ("What's New" +
+  Help Center release notes) that include API changes. API-specific V3 changes are
+  announced within these platform releases (e.g. move hosts between groups, expanded
+  Get Host Properties API). A standalone dated API-only changelog is not separately
+  published.
+entries:
+- version: v4.31
+  date: '2026-02'
+  breaking: false
+  highlights:
+  - Unified multi-tenant management enhancements for MSPs and IT teams
+  - API V3 capabilities to move hosts between groups
+  - Expanded Get Host Properties API with updated antivirus details
+  source: https://www.cynet.com/whats-new/
+- version: v4.30
+  date: '2025-11'
+  breaking: false
+  highlights:
+  - Smarter security detection improvements
+  - ProActive CyOps enhancements
+  - Enhanced endpoint discovery
+  source: https://www.cynet.com/blog/product-release-v4-30/
+- version: v4.29
+  date: '2025-09'
+  breaking: false
+  highlights:
+  - Email security enhancements
+  - MSP efficiency improvements
+  - Smarter automation
+  source: https://www.cynet.com/blog/product-release-4-29/

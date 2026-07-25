@@ -1,8 +1,14 @@
 aid: cynet
 name: Cynet
-description: 'Cynet is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Cynet is a unified, AI-powered cybersecurity platform built for MSPs and lean
+  IT/security teams that consolidates endpoint (EDR/EPP), network, email, cloud/SaaS, mobile,
+  and identity protection into a single agent and console. Its CyAI machine-learning engine
+  automatically detects and remediates the majority of threats, CyOps delivers 24x7 managed
+  detection and response, and built-in SOAR playbooks automate response across 80+ pre-built
+  integrations. Cynet exposes a REST API (Cynet 360) for programmatic access to alerts,
+  hosts, remediation, scanning, and account operations, offered as an On-Prem V1 API and a
+  SaaS V3 API, authenticated with a tenant-scoped access token. This profile was surfaced as
+  a portfolio company of Norwest Venture Partners and enriched by the API Evangelist pipeline.'
 url: https://raw.githubusercontent.com/api-evangelist/cynet/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +16,70 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.cynet.com/wp-content/uploads/2025/06/cn-favicon-150x150.png
 tags:
 - Company
-- Unknown
-apis: []
+- Cybersecurity
+- Security
+- XDR
+- EDR
+- MDR
+- SOAR
+- Endpoint Security
+- Threat Detection
+- Incident Response
+- MSP
+apis:
+- name: Cynet 360 API (SaaS V3)
+  description: 'REST API for the Cynet 360 SaaS platform (V3). Provides programmatic access to
+    alerts, hosts and host groups, remediation actions, scans, and account/token operations.
+    Authenticated with a tenant-scoped access token obtained from the account token endpoint
+    using an API user''s access key and secret key; the base URL is tenant-specific in the
+    form https://{tenant}.api.cynet.com.'
+  humanURL: https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation
+  baseURL: https://help.api.cynet.com
+  tags:
+  - Cybersecurity
+  - XDR
+  - Endpoint Security
+  properties:
+  - type: Documentation
+    url: https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation
+  - type: APIReference
+    url: https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation
+  - type: Authentication
+    url: authentication/cynet-authentication.yml
+- name: Cynet 360 API (On-Prem V1)
+  description: 'REST API for the on-premises Cynet 360 deployment (V1). Documents authentication
+    (get token), Cynet APIs for hosts, network, and client web API operations. Access-token
+    based authentication using Cynet 360 credentials with the Cynet API User permission.'
+  humanURL: https://help.api.cynet.com/docs/cynet/iah0dsbmetd0e-welcome-to-cynet-api-reference
+  baseURL: https://help.api.cynet.com
+  tags:
+  - Cybersecurity
+  - XDR
+  properties:
+  - type: Documentation
+    url: https://help.api.cynet.com/docs/cynet/iah0dsbmetd0e-welcome-to-cynet-api-reference
+  - type: GettingStarted
+    url: https://help.api.cynet.com/docs/cynet/iah0dsbmetd0e-welcome-to-cynet-api-reference
+  - type: Authentication
+    url: https://help.api.cynet.com/docs/cynet/b6b6c2d4906e9-authentication
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +88,60 @@ maintainers:
 common:
 - type: Website
   url: https://cynet.com
+- type: Portal
+  url: https://portal.cynet.com
+- type: Documentation
+  url: https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation
+- type: APIReference
+  url: https://help.api.cynet.com/docs/API-V3/9g00cv3m8b10g-cynet-api-documentation
+- type: GettingStarted
+  url: https://help.api.cynet.com/docs/cynet/iah0dsbmetd0e-welcome-to-cynet-api-reference
+- type: Support
+  url: https://help.cynet.com
+- type: Blog
+  url: https://www.cynet.com/blog/
+- type: Pricing
+  url: https://www.cynet.com/packages/
+- type: SignUp
+  url: https://www.cynet.com/request-a-demo/
+- type: Login
+  url: https://portal.cynet.com
+- type: TermsOfService
+  url: https://www.cynet.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.cynet.com/privacy-policy/
+- type: StatusPage
+  url: https://cynet.statuspage.io
+- type: ChangeLog
+  url: https://www.cynet.com/whats-new/
+- type: TrustCenter
+  url: https://www.cynet.com/cynet-trust-center/
+- type: Compliance
+  url: https://www.cynet.com/cynet-trust-center/
+- type: Authentication
+  url: authentication/cynet-authentication.yml
+- type: Conventions
+  url: conventions/cynet-conventions.yml
+- type: Conformance
+  url: conformance/cynet-conformance.yml
+- type: Lifecycle
+  url: lifecycle/cynet-lifecycle.yml
+- type: ChangeLog
+  name: Cynet product & API changelog
+  url: changelog/cynet-changelog.yml
+- type: DomainSecurity
+  url: security/cynet-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/cynet-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.cynet.com/cynet-trust-center/
+- type: TrustCenter
+  name: Cynet trust center artifact
+  url: security/cynet-trust-center.yml
+- type: LLMsTxt
+  url: llms/cynet-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
